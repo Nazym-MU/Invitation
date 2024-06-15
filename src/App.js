@@ -14,7 +14,7 @@ function App() {
       <div>
         <Parallax pages={5} style={{ top: '0', left: '0' }}>
             <ParallaxLayer offset={0} speed={1} factor={7.5} 
-                style={{ backgroundImage: `url('/images/background.png')`, backgroundSize: 'cover' }}>
+                style={{ backgroundImage: `url('${process.env.PUBLIC_URL}/images/background.png')` }}>
             </ParallaxLayer>
 
             <ParallaxLayer offset={0} speed={0.5}>

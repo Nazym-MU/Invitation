@@ -11,13 +11,14 @@ const clamp = (value, clampAt = 30) => {
 };
 
 const programDetails = [
-  { src: "/images/palau.jpeg", text: "Palau and cake by my grandma" },
-  { src: "/images/movie-night.png", text: "Huge screen for movies" },
-  { src: "/images/board-games.jpeg", text: "Board games" },
-  { src: "/images/computer-games.jpg", text: "Computer games + this cool racing wheel lol" },
-  { src: "/images/lego.png", text: "Lego Friends" },
-  { src: "/images/air.png", text: "Fresh Kaskelen air" }
-];
+    { src: `${process.env.PUBLIC_URL}/images/palau.jpg`, text: "Palau and cake by my grandma" },
+    { src: `${process.env.PUBLIC_URL}/images/movie-night.png`, text: "Huge screen for movies" },
+    { src: `${process.env.PUBLIC_URL}/images/board-games.jpeg`, text: "Board games" },
+    { src: `${process.env.PUBLIC_URL}/images/computer-games.jpg`, text: "Computer games + this cool racing wheel lol" },
+    { src: `${process.env.PUBLIC_URL}/images/lego.png`, text: "Lego Friends" },
+    { src: `${process.env.PUBLIC_URL}/images/air.png`, text: "Fresh Kaskelen air" }
+  ];
+  
 
 const ProgramDetails = () => {
   const [style, set] = useSpring(() => ({

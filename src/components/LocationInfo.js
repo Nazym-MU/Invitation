@@ -10,19 +10,19 @@ function LocationInfo() {
             <div className="map-links">
                 <MapLink 
                     href="https://maps.app.goo.gl/xgRK2bBDmQV9F9EP6"
-                    src="/images/Google.png"
+                    src={`${process.env.PUBLIC_URL}/images/Google.png`}
                     alt="Google Maps"
                     logoText="Google Maps"
                 />
                 <MapLink 
                     href="https://2gis.kz/almaty/geo/70030076356099813/76.620195%2C43.166911?m=76.619657%2C43.167138%2F17.81"
-                    src="/images/2gis.png"
+                    src={`${process.env.PUBLIC_URL}/images/2gis.png`}
                     alt="2GIS"
                     logoText="2GIS"
                 />
                 <MapLink 
                     href="https://maps.apple.com/?address=Almaty,%20Kazakhstan&auid=12690480143916179738&ll=43.166778,76.620084&lsp=7618&q=Dropped%20Pin"
-                    src="/images/Apple.png"
+                    src={`${process.env.PUBLIC_URL}/images/Apple.png`}
                     alt="Apple Maps"
                     logoText="Apple Maps"
                 />
