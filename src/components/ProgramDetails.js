@@ -11,7 +11,7 @@ const clamp = (value, clampAt = 30) => {
 };
 
 const programDetails = [
-    { src: `${process.env.PUBLIC_URL}/images/palau.jpg`, text: "Palau and cake by my grandma" },
+    { src: `${process.env.PUBLIC_URL}/images/palau.jpeg`, text: "Palau and cake by my grandma" },
     { src: `${process.env.PUBLIC_URL}/images/movie-night.png`, text: "Huge screen for movies" },
     { src: `${process.env.PUBLIC_URL}/images/board-games.jpeg`, text: "Board games" },
     { src: `${process.env.PUBLIC_URL}/images/computer-games.jpg`, text: "Computer games + this cool racing wheel lol" },
