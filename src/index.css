@@ -5,9 +5,264 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: black;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.invitation-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.invitation-text {
+  color: white;
+  width: 50%;
+  font-family: "Indie Flower", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+  padding: 20px;
+  text-align: right;
+}
+
+h2 {
+  color: white;
+  font-family: "Indie Flower", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+}
+
+p {
+  color: white;
+  font-family: "Indie Flower", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.label {
+  color: white;
+  font-family: "Indie Flower", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 10px;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.location {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header, .map-links {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+ .header ul {
+  color: white;
+  font-family: "Indie Flower", cursive;
+  font-weight: 400;
+  font-size: 20px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.map-links {
+  display: flex;
+  justify-content: space-around;
+}
+
+.map-link {
+  width: 20%; 
+  margin: 20px; 
+  padding: 10px;
+  background-color: #f8f9fa;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden; 
+}
+
+
+.map-link button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.map-link img {
+  max-width: 100%; 
+}
+
+.map-link span {
+  font-family: "Indie Flower", cursive; 
+  font-size: 14px; 
+  color: #333;
+  margin-top: 5px;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+
+.card {
+  width: 250px;
+  height: 250px; 
+  background-size: cover;
+  background-position: center;
+  margin: 20px;
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; 
+  padding: 20px;
+  color: white; 
+  text-shadow: 0 2px 4px rgba(0,0,0,0.7);
+}
+
+.card-text {
+  font-size: 18px; 
+}
+
+.rsvp-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.rsvp-heading {
+  background-color: rgba(169, 113, 94, 0.6);
+  border-radius: 50px;
+  padding: 10px 20px;
+  margin: 20px 0;
+  text-align: center;
+  width: fit-content; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.animated-button {
+  padding: 12px 24px;
+  border: 2px dashed white; 
+  background-color: rgba(255, 255, 255, 0.6); 
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase; 
+  border-radius: 6px;
+  transition: all 0.3s ease; 
+  cursor: pointer; 
+  position: relative; 
+  outline: none; 
+}
+
+.animated-button:hover {
+  transform: translate(-4px, -4px); 
+  border-radius: 6px;
+  box-shadow: 4px 4px 0px rgb(148, 147, 147);
+}
+
+.animated-button:active {
+  transform: translate(0px, 0px); 
+  border-radius: 6px; 
+  box-shadow: none; 
+}
+
+.countdown {
+  text-align: center;
+  padding: 20px;
+}
+
+.time-units {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.time-unit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.number-box {
+  width: 180px;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 2px solid black; 
+  border-radius: 40px;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.number-box:hover {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.time-label {
+  margin-top: 10px; 
+  text-transform: capitalize; 
+  font-size: 1rem;
+  font-family: "Indie Flower", cursive;
+  font-weight: 400;
+  color: white;
+}
+
+.contact-links {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.contact-links h2 {
+  color: #FFF;
+}
+
+.contact-links a {
+  display: inline-block;
+  color: white;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.contact-links a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.contact-links a svg {
+  margin-right: 8px;
+}
+
+.thin-text {
+  color: white;
+  font-weight: lighter; 
 }
